@@ -1,1 +1,1 @@
-"# roleAuth-npmPackage" 
+"roleAuth-npmPackage" 
