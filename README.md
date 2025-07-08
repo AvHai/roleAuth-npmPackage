@@ -1,4 +1,4 @@
-# rbac-auth
+# roleAuth
 
 A reusable role-based authentication package for Express + MongoDB.
 
