@@ -1,9 +1,10 @@
 {
-  "name": "role_auth",
+  "name": "roleadmin",
   "version": "1.0.0",
   "description": "Role-Based Authentication NPM Package",
   "main": "src/index.js",
   "scripts": {
+    "start": "nodemon src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
