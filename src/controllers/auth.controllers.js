@@ -1,12 +1,12 @@
 import User from "../models/user.model";
 import { generateToken } from "../utils/token.js";
-import { config } from "../config.js";
+
 
 const register = async (req, res) => {
-  const { username, email, password } = req.body;
+  const { username, email, password, role } = req.body;
 
   try {
-    const user = new User({ username, email, password });
+    const user = new User({ username, email, password,role });
     await user.save();
 
     const token = generateToken(user);
