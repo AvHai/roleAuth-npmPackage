@@ -1,5 +1,5 @@
 {
-  "name": "roleadmin",
+  "name": "@avhishek_nandi/roleadmin",
   "version": "2.0.0",
   "description": "Role-Based Authentication NPM Package",
   "main": "src/index.js",
