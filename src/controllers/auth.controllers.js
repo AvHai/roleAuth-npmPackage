@@ -1,5 +1,6 @@
-import User from "../models/user.model";
+import User from "../models/user.model.js";
 import { generateToken } from "../utils/token.js";
+
 
 
 const register = async (req, res) => {

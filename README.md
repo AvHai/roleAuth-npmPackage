@@ -11,12 +11,16 @@ A reusable role-based authentication package for Express + MongoDB.
 
 ## 📦 Install
 ```bash
-npm install rbac-auth
+npm install roleadmin
 ```
 
 ## 🚀 Usage
 ```js
-const app = require('rbac-auth');
+const express = require('express');
+const { initAuth } = require('roleadmin');
+
+const app = express();
+app.use('/api/auth', initAuth());
 
 app.listen(5000, () => {
   console.log('Auth server running on http://localhost:5000');
@@ -31,8 +35,12 @@ app.listen(5000, () => {
 
 ## 🔒 Environment Variables
 ```env
-MONGO_URI=mongodb://localhost:27017/rbacauth
+MONGO_URI=mongodb://localhost:27017/roleauth
 JWT_SECRET=your_secret
-JWT_EXPIRE=1h
+JWT_EXPIRATION=1d
 DEFAULT_ROLES=user,moderator,admin
 ```
+
+## 📝 Notes
+- Make sure MongoDB is running and accessible at the URI you provide.
+- The middleware auto-registers

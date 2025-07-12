@@ -1,4 +1,4 @@
-import connectDB from '../config/db.js';
+import connectDB from '../src/config/db.js';
 import mainRouter from './routes/authRoutes.js';
 import authMiddleware from './middleware/auth.middleware.js';
 import rolesMiddleware from './middleware/roles.middleware.js';
